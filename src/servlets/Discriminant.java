@@ -27,6 +27,9 @@ public class Discriminant extends HttpServlet {
     }
 
 
-
+    public static void doService(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//
+        req.getRequestDispatcher("/WarningJsp.jsp").forward(req, resp);
+    }
 
 }

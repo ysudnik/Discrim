@@ -28,7 +28,7 @@ public class Solution extends HttpServlet {
             req.getServletContext().setAttribute("x4", x4);
             req.getRequestDispatcher("/result.jsp").forward(req, resp);
         }else{
-            DoWrong.doService(req,resp);
+            Discriminant.doService(req,resp);
         }
     }
 }
